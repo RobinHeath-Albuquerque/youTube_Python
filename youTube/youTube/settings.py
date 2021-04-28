@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'youTubeVideos.apps.YoutubevideosConfig'
+    'youTubeVideos.apps.YoutubevideosConfig',
+    'embed_video',
 
 ]
 
