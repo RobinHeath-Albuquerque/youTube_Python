@@ -1,8 +1,11 @@
 from django.db import models
 from django.db.models import Model
+from embed_video.fields import EmbedVideoField
+from django.db import models
 
 
 class Video(models.Model):
-    title = models.URLField(max_length=200)
+    video = EmbedVideoField(max_length=200, default=0)
+    title = models.CharField(max_length=50, default=0)
 
 # Create your models here.
